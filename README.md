@@ -1,0 +1,2 @@
+# TareaII_Manfred_Valentina
+TareaII_Manfred_Valentina_Datos_Covid19_CR
