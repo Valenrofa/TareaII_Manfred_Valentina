@@ -1,2 +1,4 @@
 # TareaII_Manfred_Valentina
-TareaII_Manfred_Valentina_Datos_Covid19_CR
+El presente repositorio contiene información referente al análisis de datos covid-19 en Costa Rica para el 30 de mayo del 2022. De esta manera, se realiza una retabulación y reacomodo de datos, conversiones de fechas, creación de dataframes, cambio de columnas y elaboración de gráficos para análisis e interpretación de datos mediante paquetes de código como ggplot2 y tidyverse.
+En este sentido, una vez procesados los datos, se ha logrado visualizar que, por ejemplo, la cantidad de casos positivos de covid-19 fue mayor en zonas urbanas en las que había mayor concentración de población, que en zonas rurales. Además, en cuanto a los casos positivos por grupos de edad, se podría deducir que existió un aumento de casos en menores de edad por la falta de vacunación en los mismos.
+
