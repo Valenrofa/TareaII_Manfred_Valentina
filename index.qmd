@@ -34,6 +34,9 @@ options(scipen = 7)
 library(readr)
 library(tidyverse)
 library(data.table)
+library(ggplot2)
+library(DT)
+library(dplyr)
 library(plotly)
 ```
 
@@ -74,7 +77,6 @@ nuevos_positivos = nue_posi
 )
 ```
 
-
 ### Cambio de tipo de datos de la columna fecha, de str a date #ISO 8601
 
 ```{r}
@@ -96,9 +98,10 @@ covid_general <- drop_na(data = covid_general)
 ```{r}
 #|  label: Desarrollar la primera tabla
 covid_general |>
-data.table(options = list)
-pageLength = 10
-language = list(url = '//cdn.datatables.net/plug-ins/1.10.11/i18n/Spanish.json')
+  datatable(options = list(
+    pageLength = 5,
+    language = list(url = '//cdn.datatables.net/plug-ins/1.10.11/i18n/Spanish.json')
+  ))
 ```
 
 ## Gráfico 1. Casos positivos nuevos por día, del 03/06/2020 al 30/05/2022.
@@ -193,8 +196,8 @@ filter(!is.na(canton) & canton != "Otros")
 #|  label: Generar tabla 2 sobre casos positivos de covid por provincia y canton
 # Tabla de datos de COVID cantonales positivos
 covid_cantonal_positivos |>
-data.table(options = list (
-pageLength = 10,
+datatable(options = list (
+pageLength = 5,
 language = list(url = '//cdn.datatables.net/plug-ins/1.10.11/i18n/Spanish.json')
 ))
 ```
